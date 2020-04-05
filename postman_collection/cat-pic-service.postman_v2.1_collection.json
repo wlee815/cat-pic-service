@@ -73,11 +73,11 @@
 					"formdata": [
 						{
 							"key": "id",
-							"value": "",
+							"value": "1",
 							"type": "text"
 						},
 						{
-							"key": "fileUpload",
+							"key": "file",
 							"type": "file",
 							"src": "/Users/williamlee815/Downloads/cat2.png"
 						},
