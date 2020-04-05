@@ -1,0 +1,18 @@
+<html>
+
+<h1>Upload a new cat pic:</h1>
+<form enctype="multipart/form-data" method="POST" action="http://localhost:8080/cats">
+    <input type="file" id="fileUpload" name="file"/><br>
+    <input type="hidden" id="fileName" name="fileName"/><br>
+    <input type="submit" value="Upload"/>
+</form>
+
+<h1>Update an existing cat pic:</h1>
+<form enctype="multipart/form-data" method="POST" action="http://localhost:8080/cats">
+    <!-- TODO: future enhancement: change this text field into a dropdown that lists all known ids -->
+    <p>Enter an ID:</p> <input type="text" id="id" name="id"/><br>
+    <input type="file" id="fileUpload" name="file"/><br>
+    <input type="hidden" id="fileName" name="fileName"/><br>
+    <input type="submit" value="Upload"/>
+</form>
+</html>
