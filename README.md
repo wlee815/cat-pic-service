@@ -9,3 +9,6 @@ How to start the CatPicService application
 1. Start application with `java -jar target/cat-pic-service-1.0-SNAPSHOT.jar server config.yml`
 1. Start Postman, open the collection in postman_collection, and use the endpoints to interact with the service.
 
+API Documentation
+---
+Documentation for all endpoints is listed in the JavaDoc comments in CatPicResource.java.
