@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "c439d6a2-97b4-4a94-8a25-b484f2baa67e",
+		"name": "cat-pic-service",
+		"description": "Postman collection containing requests & samples for all endpoints in the cat-pic-service.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload a new cat pic",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/williamlee815/Downloads/cat1.png"
+						},
+						{
+							"key": "fileName",
+							"value": "cat1.png",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/cats/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cats",
+						""
+					]
+				},
+				"description": "Upload a new photo"
+			},
+			"response": []
+		},
+		{
+			"name": "Get a cat pic by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cats/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cats",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update an existing cat pic by id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "fileUpload",
+							"type": "file",
+							"src": "/Users/williamlee815/Downloads/cat2.png"
+						},
+						{
+							"key": "fileName",
+							"value": "cat2.png",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/cats/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cats",
+						""
+					]
+				},
+				"description": "Retrieves a cat pic for a given id."
+			},
+			"response": []
+		},
+		{
+			"name": "Get a list of cat pic ids",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cats/ids",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cats",
+						"ids"
+					]
+				},
+				"description": "Retrieves ids for all known cat pics."
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an existin cat pic by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cats/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cats",
+						"2"
+					]
+				},
+				"description": "Deletes the cat pic associated with the given id."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
